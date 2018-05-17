@@ -1,9 +1,9 @@
 <?php
 // anything' OR 'x'='x
-// drop
+// ' or ''='
 if(!empty($_POST)){
 	
-	$conn = mysqli_connect("localhost", "root", "Mysql123!!!", "hack");
+	$conn = mysqli_connect("localhost", "root", "", "test");
  
 	// check connection
 	if (mysqli_connect_errno()) {

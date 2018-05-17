@@ -2,7 +2,8 @@
 header("X-XSS-Protection: 0");
 // <script>alert("hack")</script>
 if(!empty($_POST)){
-	echo $_POST['username'];
+	$_POST['username'] = str_replace('<script>', '', $_POST['username']);
+	$_POST['username'] = str_replace('</script>', '', $_POST['username']);
 }
 
 ?>
