@@ -59,8 +59,22 @@ print '<!DOCTYPE html>
 else {
 	print '
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250; no-cashe; no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Language" content="hr">
+    <meta name="Keywords" content="TVZ,Tehničko veleučilište u Zagrebu">
+    <meta name="Description" content="Tehničko veleučilište u Zagrebu, Zagreb>
+    <meta http-equiv="Author" content="Davor Cafuta davor.cafuta@tzv.hr Ivica Dodig ivica.dodig@tvz.hr">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>moj.tvz.hr 8.23 (2018-05-14)</title>
+    <link href="https://moj.tvz.hr/css/bootstrap.css" rel="stylesheet">
+    <link href="https://moj.tvz.hr/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://moj.tvz.hr/css/pocetak_svega.css" rel="stylesheet">
+	<script src="https://moj.tvz.hr/js/jquery-1.11.1.min.js"></script>
+	<script src="https://moj.tvz.hr/js/bootstrap.js"></script>
+  </head>
 	<style>
 		iframe {
 			width:100%;height:900px; border:0;overflow: hidden;
