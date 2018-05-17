@@ -7,7 +7,11 @@
 			echo "Type: " . $_FILES["file"]["type"] . "<br>";
 			echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
 			echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
-			echo move_uploaded_file($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
+			$ext = strtolower(strrchr($_FILES["file"]["name"], "."));
+			echo "Extension: " . $ext . "<br>";
+			if ($ext == '.jpg' || $ext == '.png') {
+				echo move_uploaded_file($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
+			}
 			echo "Stored in: " . $_FILES["file"]["name"];
 		}
 	}
